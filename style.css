@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap');
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    background-color:#f1f3f4    ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}    
+
+    .navigation  a{
+        text-decoration: none;
+        color: #111111;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding-left: 30px;
+}
+.navigation a:hover{
+    color: #4285f4;
+}
+section{
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(assets/Consatntine\ 2023.png)no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.container .content h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.container .image img{
+
+    max-width: 250px;
+    margin: auto;
+    }
+    .info{
+        position: relative;
+        padding-top: 2rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        gap: 2rem;
+    }
+.info h2{
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 3em;
+    font-family: 'Roboto Mono', monospace;
+}
+    .info .agenda img{
+        max-width  max-width: 100%; 
+        max-height: 100%; 
+        margin: auto;
+        }
+    
