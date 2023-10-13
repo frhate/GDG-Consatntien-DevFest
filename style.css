@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap');*{
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
@@ -39,7 +38,7 @@ section{
     background: url(assets/Consatntine\ 2023.png)no-repeat;
     background-size:contain;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     justify-content: center;
 }
 .container{
@@ -96,13 +95,16 @@ section{
        grid-template-columns: repeat(3,1fr);
        align-items: center;
        gap: 2rem;
+       
      }
         
 footer{
     background-image: url(assets/05.png);
+    background-size:cover ;
     position: relative;
     display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
     gap: 2rem;
 }
 
@@ -119,12 +121,15 @@ footer .column p{
 
 footer .column .socials{
     display: flex;
-    align-items: center;
     gap: 1rem;
 }
 
 footer .column .socials a{
     color: #f1f3f4 ;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    
     border: 1px solid #f1f3f4 ;
     padding: 5px 10px;
     font-size: 1.25rem;
@@ -136,6 +141,7 @@ footer .column .socials a:hover{
     color: #f1f3f4 ;
     background-color: #1d4ed8;
     border-color: #1d4ed8;
+
 }
 
 footer .column h4{
@@ -150,6 +156,7 @@ footer .column > a{
     text-decoration: none;
     color:#f1f3f4 ;
     margin-bottom: 1rem;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -164,8 +171,22 @@ footer .column > a:hover{
     color: #000000;
     font-size: 0.8rem;
     text-align: center;
-<<<<<<< HEAD
 }
-=======
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 , 0.35);
+    padding: 16px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 0.6s ease;
+    cursor: pointer;
 }
->>>>>>> 780283b4d9047fe780cae3e64d11ef96ad862a8e
+.scroll-top:hover{
+    border-color:#fff ;
+    box-shadow: none;
+}
